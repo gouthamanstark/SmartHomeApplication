@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <title>User Registration</title>
+</head>
+<body>
+<H1> This is the login page!! Please login to control your smart home</H1><br> <br>
+<form name="login" method="POST" action="/login">
+
+    Enter your Username: <input name="username" type="text" placeholder="Enter your username or email"/>
+    Enter your password: <input type="password" name="password" placeholder="Enter your password"/>
+    <br><br>
+    Enter your OTP:<input type="text" name="otp" placeholder="Enter your 6 digit OTP here"/><br><br>
+    <input type="submit" value="Login"/>
+
+
+</form>
+<br>
+    <br>
+    <h3> New User?? </h3>
+<form >
+
+    <input type="submit" value="Sign up" formaction="/registration"/>
+</form>
+<br>
+<br>
+<h4> {{ registration_successful }}</h4>
+<br>
+<img src={{ image_value }}>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>New User Registration</title>
+</head>
+<body>
+<h1> This page is for new Users!! Please register here</h1>
+
+<form name="registration" method="POST" action="/register">
+      ENter your Name: <input name="username" type="text"/>
+    Enter your password: <input type="password" name="password"/>
+    Enter your email : <input type="text" name="email"/>
+    <input type="submit" value="Signup"/>
+</form>
+
+<br>
+<br>
+<h4> {{ invalid_input }}</h4>
+<br>
+
+
+</body>
+</html>

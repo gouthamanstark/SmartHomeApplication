@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Table Lamp</title>
+</head>
+
+<style>
+.index{
+background : red;
+width: auto;
+height : auto;
+}
+.menu{
+width: 100%;
+height: auto;
+background : yellow;
+}
+.call-button{
+display: inline-block;
+width: 50%;
+height: 100px;
+}
+.form-menu{
+display: flex;
+flex-direction: column;
+width: 100%;
+align-items: center;
+}
+</style>
+
+<body class="index">
+
+<div class="menu">
+<form method="GET">
+    <input class="call-button status" type="submit" value="Check the status" formaction='/status'>
+	<input class="call-button"  type="submit" value="Turn ON Light" formaction="/powerOn">
+	<input class="call-button"  type="submit" value="Turn OFF Light" formaction="/powerOff">
+	<input class="call-button" type="submit" value="Open camera" formaction="/camera">
+	<input class="call-button" type="submit" value="Check Room Temperature" formaction="/temperature">
+</form>
+</div>
+
+
+
+</body>
+</html>
